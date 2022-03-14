@@ -5,6 +5,7 @@
 :root{
     --primary-color:#3FC060;
     --secondary-color:#162328;
+    --active-color: #ffff
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
