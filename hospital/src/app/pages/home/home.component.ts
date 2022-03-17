@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit {
   }
 
 
-
   bookappoinment(){
     this.router.navigate(['book_appointment'],{relativeTo:this.route})
   }

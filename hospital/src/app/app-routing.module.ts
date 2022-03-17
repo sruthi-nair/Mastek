@@ -6,15 +6,17 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
 
-const routes: Routes = [
-  {path:'',redirectTo:'/home',pathMatch:'full'},
-  {path:'home',component:HomeComponent,
 
-   children:[{path:'book_appointment',component:BookAppointmentComponent}]
-},
+const routes: Routes = [
+  // {path:'',redirectTo:'/home',pathMatch:'full'},
+  {path:'home',component:HomeComponent,
+  //  children:[{path:'book_appointment',component:BookAppointmentComponent}]
+  },
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactComponent},
-  {path:'gallery',component:GalleryComponent}
+  {path:'gallery',component:GalleryComponent},
+  {path:'book-appointment',component:BookAppointmentComponent}
+
 ];
 
 @NgModule({
