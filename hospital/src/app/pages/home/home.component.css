@@ -48,12 +48,11 @@
   transition: 0.1s;
 }
 
-.col-3
-{
+.col-3 {
     float: left;
     width: 32%;
-    
 }
+
 @keyframes scroll{
   0%{
     transform: translateX();
@@ -70,12 +69,13 @@
 #feature-section h1{
   /* padding-top: 30px; */
   padding-left: 60px;
-  font-family: cursive;
-  color: #1E90FF;
+  /* font-family: cursive; */
+  font-weight: 600;
+  color: #000000;
   text-align: center;
   padding-bottom: 20px;
-
 }
+
 .feature-section-title{
   width: 80%;
   text-align: center;
@@ -113,7 +113,14 @@
 .col-3 button{
   border: none;
   width: 20%;
+  
 }
+
+.col-3 img {
+  border-radius: 1px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
 button{
   border: none;
   background-color: white;
@@ -132,7 +139,7 @@ button:hover{
   /* text-align: left; */
   font-weight: 600;
   /* width:95%; */
-  letter-spacing: px;
+  /* letter-spacing: px; */
 }
 .feature-content .col-3{
   padding: 10px;
@@ -180,17 +187,19 @@ button:hover{
   margin: auto;
   font-style: italic;
   font-weight: 600;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
 }
 .last-content{
   padding-top: 50px;
   padding-left: 60px;
-  font-family: cursive;
+  /* font-family: cursive; */
   color: #1E90FF;
   text-align: center;
 }
 .last-content h1{
   padding-bottom: 30px;
+  color: #000;
+  font-weight: 600;
 
 }
 .content{
@@ -198,15 +207,22 @@ button:hover{
   width: 100%;
   text-align: center;
   font-weight:200;
+  height: 400px;
   line-height: 1.5em;
   /* margin: auto; */
   display: inline-flex;
-  padding-left: 29px;
- 
+  justify-content: space-evenly;
+  /* padding-left: 29px; */
 }
 
 .content .col-4 img{
   width: 100%;
+}
+
+.content h3 {
+  color:#000;
+  font-weight: 600;
+  font-size: 1.25em;
 }
 
 .content .col-4 p{
@@ -216,30 +232,58 @@ button:hover{
   /* width:95%; */
   letter-spacing: 1px;
 }
- .col-4{
+
+.col-4{
   font-size:21px;
   padding-left: 20px;
   width: 30%;
   font-family: 'Times New Roman', Times, serif;
   /* font-style: italic; */
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 10px;
+  height: 350px;
 } 
 .col-4:hover{
     transform: scale(1.1,1.1);
     transition: .3s transform;
 }
 .blog{
-  border: none;
-  background-color:#00FFFF;
+  /* border: none;
   width: 40%;
-  font-size: small;
-  border-radius: 50%;
+  font-size: medium;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-radius: 50px;
+  height: 40px;
+  width: 140px; */
   /* text-decoration: none; */
+  width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 42.5px;
+    text-align:center;
+    border: 0.25px solid black;
+    background-size: 200% 65%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 .blog:hover{
-  background-color:	#0000FF;
-  color: azure;
-  height: 10% ;
+  background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.blog:focus {
+  outline: none;
 }
 
 @media only screen and (max-width:700px){
